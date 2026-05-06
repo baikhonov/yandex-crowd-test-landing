@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -82,7 +83,7 @@
                                 <p class="event__label">Стоимость входных билетов:</p>
                                 <p class="event__value">20 коп.</p>
                             </div>
-                            <div class="event__row">
+                            <div class="event__row event__row--line">
                                 <p class="event__label">Плата за игру:</p>
                                 <p class="event__value">50 коп.</p>
                             </div>
@@ -96,8 +97,72 @@
                 </div>
             </div>
         </section>
+
+        <section class="steps">
+            <div class="container">
+                <h2 class="steps__title">
+                    Этапы преображения Васюков <span class="steps__title-block">Будущие источники обогащения васюкинцев</span>
+                </h2>
+
+                <div class="steps__slider-wrapper">
+                    <div class="steps__slider swiper">
+                        <div class="steps__grid swiper-wrapper">
+                            <div class="steps__item steps__item--long swiper-slide">
+                                <div class="step">
+                                    <div class="step__number">1</div>
+                                    <div class="step__text">Строительство железнодорожной магистрали Москва-Васюки</div>
+                                </div>
+                                <div class="step">
+                                    <div class="step__number">2</div>
+                                    <div class="step__text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</div>
+                                </div>
+                            </div>
+                            <div class="steps__item steps__item--high swiper-slide">
+                                <div class="step">
+                                    <div class="step__number">3</div>
+                                    <div class="step__text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
+                                </div>
+                            </div>
+                            <div class="steps__item steps__item--long swiper-slide">
+                                <div class="step">
+                                    <div class="step__number">4</div>
+                                    <div class="step__text">Строительство дворца для турнира</div>
+                                </div>
+                                <div class="step">
+                                    <div class="step__number">5</div>
+                                    <div class="step__text">Размещение гаражей для гостевого автотранспорта</div>
+                                </div>
+                            </div>
+                            <div class="steps__item swiper-slide">
+                                <div class="step">
+                                    <div class="step__number">6</div>
+                                    <div class="step__text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</div>
+                                </div>
+                            </div>
+                            <div class="steps__item steps__item--long steps__item--long-one swiper-slide">
+                                <div class="step">
+                                    <div class="step__number">7</div>
+                                    <div class="step__text">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-controls">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+
+                    <div class="steps__plane">
+                        <img src="images/plane.png" alt="Самолёт">
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
