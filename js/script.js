@@ -88,3 +88,26 @@ if (membersSliderEl) {
         },
     });
 }
+
+const heroPrimaryButton = document.querySelector(".hero__button--primary");
+const heroSecondaryButton = document.querySelector(".hero__button--secondary");
+const lectionSection = document.querySelector(".lection");
+const membersSection = document.querySelector(".members");
+
+const scrollToSection = (event, section) => {
+    event.preventDefault();
+
+    if (!section) return;
+
+    section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+    });
+};
+
+heroPrimaryButton?.addEventListener("click", (event) =>
+    scrollToSection(event, lectionSection)
+);
+heroSecondaryButton?.addEventListener("click", (event) =>
+    scrollToSection(event, membersSection)
+);
