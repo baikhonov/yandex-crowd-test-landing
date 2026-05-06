@@ -36,7 +36,7 @@ img {
 
 .hero {
   min-height: calc(100vh - 60px);
-  background-image: url(../images/hero-bg-desktop.jpg);
+  background-image: url(../images/hero-bg-desktop.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -391,7 +391,8 @@ img {
   height: 100%;
   min-height: 112px;
   padding: 20px 22px 20px 20px;
-  background-image: url(../images/step-bg.jpg);
+  background-color: #f5f5f5;
+  background-image: url(../images/step-bg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -565,7 +566,7 @@ img {
 
   .hero {
     min-height: 100vh;
-    background-image: url(../images/hero-bg-mobile.jpg);
+    background-image: url(../images/hero-bg-mobile.webp);
     background-position: bottom center;
   }
 
