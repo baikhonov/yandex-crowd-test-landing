@@ -43,26 +43,29 @@ if (membersSliderEl) {
         ".swiper-counter-total"
     );
 
+    const totalMembersSlides = membersSliderEl.querySelectorAll(
+        ".swiper-slide:not(.swiper-slide-duplicate)"
+    ).length;
+
+
+    membersCounterTotalEl.textContent = totalMembersSlides;
+
     const updateMembersCounter = (swiper) => {
         if (!membersCounterCurrentEl || !membersCounterTotalEl) return;
 
         const currentSlide = swiper.realIndex + 1;
-        const totalSlides = swiper.slides.filter(
-            (slide) => !slide.classList.contains("swiper-slide-duplicate")
-        ).length;
 
         membersCounterCurrentEl.textContent = currentSlide;
-        membersCounterTotalEl.textContent = totalSlides;
     };
 
     new Swiper(membersSliderEl, {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        // delay: 4000,
+        // disableOnInteraction: false,
+        // },
         navigation: {
             nextEl: ".members .members__slider-controls .swiper-button-next",
             prevEl: ".members .members__slider-controls .swiper-button-prev",
